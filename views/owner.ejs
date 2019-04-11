@@ -7,14 +7,16 @@
   </head>
   <body>
     <h1>Owner Losses and Wins</h1>
-<!-- My database information will be shown here -->
+    <ul class="stats">
+      <% for(var i=0; i<stats.length; i++) {%>
+        <li class="stats">
+          <p><%= stats[i].wins %></p>
+          <p><%= stats[i].losses %></p>
+        </li>
+      <% } %>
+    </ul>
     <section class="wins"></section>
     <section class="losses"></section>
-    <form action="/stats" class="" method="put">
-      <input type="text" name="budget" value="">
-      <button type="submit" name="button"></button>
-    </form>
-    <section class="budget"></section>
     <script src="owner.js" type="text/javascript"></script>
   </body>
 </html>

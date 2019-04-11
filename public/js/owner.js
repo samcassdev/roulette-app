@@ -2,15 +2,8 @@
 //Owner must also be able to view how much $ profit (losses) and how much $ loss (wins)
 //if the current value does not equal the current value then update into the dom
 
-//
-// <ul class="stats">
-  // <% for(var i=0; i<stats.length; i++) {%>
-//     <li class="stats">
-//       <p><%= stats[i].budget %></p>
-//       <p><%= stats[i].wins %></p>
-//       <p><%= stats[i].losses %></p>
-//     </li>
-//   <% } %>
-// </ul>
+let wins = document.querySelector('wins')
+//need information from user's losses
 
-alert("run server")
+let losses = document.querySelector('losses')
+//need information from user's wins 

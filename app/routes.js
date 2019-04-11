@@ -51,6 +51,10 @@ module.exports = function(app, passport, db) {
           failureFlash : true // allow flash messages
       }));
 
+      app.put('/owner'), function(req, res) {
+        res.render('owner.ejs', {wins: req.body.wins, losses: req.body.losses}
+      }
+
 // =============================================================================
 // UNLINK ACCOUNTS =============================================================
 // =============================================================================
